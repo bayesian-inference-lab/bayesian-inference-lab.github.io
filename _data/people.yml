@@ -23,10 +23,11 @@
 - name: "Junhee Kim"
   position: "Master's Student"
   group: "Master's Students"
-  interests: "Bayesian inference"
+  interests: "Bayesian Machine Learning, Deep Learning"
   email: "kim8881472@gmail.com"
   image: "/assets/img/person-placeholder.svg"
-
+  github: "https://github.com/joon0390"
+  
 - name: "Seonghyuk Park"
   position: "Master's Student"
   group: "Master's Students"
@@ -42,13 +43,13 @@
 - name: "Sooha Cho"
   position: "Master's Student"
   group: "Master's Students"
-  interests: "Bayesian inference"
+  interests: "Clinical statistics, Bayesian inference"
   image: "/assets/img/person-placeholder.svg"
 
-- name: "Dongwhan Kim"
+- name: "Donghwan Kim"
   position: "Master's Student"
   group: "Master's Students"
-  interests: "Bayesian inference"
+  interests: "Financial risk time series analysis"
   image: "/assets/img/person-placeholder.svg"
 
 - name: "Taemin Jeong"
