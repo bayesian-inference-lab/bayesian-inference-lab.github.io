@@ -21,6 +21,8 @@ navigation:
     url: /software/
   - title: Projects
     url: /projects/
+  - title: Photo
+    url: /photo/
   - title: Contact
     url: /contact/
 

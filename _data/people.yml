@@ -1,7 +1,6 @@
 - name: "Seongil Jo"
   position: "Professor"
   group: "Principal Investigator"
-  interests: "Bayesian parametric/nonparametric models, Bayesian computational methods"
   email: "statjs@inha.ac.kr"
   image: "/assets/img/person-placeholder.svg"
   website: "https://sites.google.com/view/bstatjo/home"

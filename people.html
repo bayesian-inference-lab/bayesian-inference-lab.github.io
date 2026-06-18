@@ -13,14 +13,39 @@ permalink: /people/
 
 <section class="page-section">
   <div class="section-inner">
-    {% assign groups = "Principal Investigator,Ph.D. Students,Master's Students,Alumni" | split: "," %}
     {% if site.data.people and site.data.people.size > 0 %}
+      {% assign pi_members = site.data.people | where: "group", "Principal Investigator" %}
+      {% if pi_members.size > 0 %}
+        <div class="section-header">
+          <div>
+            <h2>Professor</h2>
+          </div>
+        </div>
+        <div class="people-grid people-grid-pi">
+          {% for person in pi_members %}
+            <article class="person-card">
+              <img src="{{ person.image | default: '/assets/img/person-placeholder.svg' | relative_url }}" alt="{{ person.name }}">
+              <div class="person-body">
+                <h3>{{ person.name }}</h3>
+                <p class="person-position">{{ person.position }}</p>
+                <div class="person-links">
+                  {% if person.email and person.email != "" %}<a href="mailto:{{ person.email }}">Email</a>{% endif %}
+                  {% if person.website and person.website != "" %}<a href="{{ person.website }}" rel="noreferrer">Website</a>{% endif %}
+                  {% if person.scholar and person.scholar != "" %}<a href="{{ person.scholar }}" rel="noreferrer">Scholar</a>{% endif %}
+                  {% if person.github and person.github != "" %}<a href="{{ person.github }}" rel="noreferrer">GitHub</a>{% endif %}
+                </div>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% assign groups = "Ph.D. Students,Master's Students,Undergraduate Students,Alumni" | split: "," %}
       {% for group in groups %}
         {% assign members = site.data.people | where: "group", group %}
         {% if members.size > 0 %}
           <div class="section-header">
             <div>
-              <p class="section-kicker">{{ group }}</p>
               <h2>{{ group }}</h2>
             </div>
           </div>
@@ -33,10 +58,10 @@ permalink: /people/
                   <p class="person-position">{{ person.position }}</p>
                   {% if person.interests %}<p>{{ person.interests }}</p>{% endif %}
                   <div class="person-links">
-                    {% if person.email %}<a href="mailto:{{ person.email }}">Email</a>{% endif %}
-                    {% if person.website %}<a href="{{ person.website }}" rel="noreferrer">Website</a>{% endif %}
-                    {% if person.scholar %}<a href="{{ person.scholar }}" rel="noreferrer">Scholar</a>{% endif %}
-                    {% if person.github %}<a href="{{ person.github }}" rel="noreferrer">GitHub</a>{% endif %}
+                    {% if person.email and person.email != "" %}<a href="mailto:{{ person.email }}">Email</a>{% endif %}
+                    {% if person.website and person.website != "" %}<a href="{{ person.website }}" rel="noreferrer">Website</a>{% endif %}
+                    {% if person.scholar and person.scholar != "" %}<a href="{{ person.scholar }}" rel="noreferrer">Scholar</a>{% endif %}
+                    {% if person.github and person.github != "" %}<a href="{{ person.github }}" rel="noreferrer">GitHub</a>{% endif %}
                   </div>
                 </div>
               </article>
