@@ -293,7 +293,7 @@ a:hover {
 }
 
 .neon-photo {
-  margin: 0 0 1.2rem;
+  margin: 1.2rem 0 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
