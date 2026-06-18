@@ -1,0 +1,36 @@
+---
+title: Software
+description: Software from Bayesian Inference LAB.
+permalink: /software/
+---
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">Software</span>
+    <h1>Software</h1>
+    <p class="page-lead">
+      Open-source code, packages, and reproducible tools developed by the lab.
+    </p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="section-inner">
+    {% if site.data.software and site.data.software.size > 0 %}
+      <ul class="software-list">
+        {% for item in site.data.software %}
+          <li class="software-line">
+            {% if item.url %}
+              <a href="{{ item.url }}" rel="noreferrer">{{ item.name }}</a>
+            {% else %}
+              <strong>{{ item.name }}</strong>
+            {% endif %}
+            {% if item.description %}<span>: {{ item.description }}</span>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div class="empty-state">Software will be listed here.</div>
+    {% endif %}
+  </div>
+</section>

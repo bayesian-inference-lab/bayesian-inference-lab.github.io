@@ -1,0 +1,37 @@
+---
+title: Projects
+description: Research projects of Bayesian Inference LAB.
+permalink: /projects/
+---
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">Projects</span>
+    <h1>Projects</h1>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="section-inner">
+    {% if site.data.projects and site.data.projects.size > 0 %}
+      <ul class="project-list">
+        {% for project in site.data.projects %}
+          <li class="project-item">
+            <p class="item-meta">{{ project.period }}{% if project.sponsor %} · {{ project.sponsor }}{% endif %}</p>
+            <h3>{{ project.title }}</h3>
+            {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+            {% if project.tags %}
+              <div class="tag-row">
+                {% for tag in project.tags %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div class="empty-state">Projects will be listed here.</div>
+    {% endif %}
+  </div>
+</section>

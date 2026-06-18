@@ -1,0 +1,28 @@
+{% assign current_url = page.url | remove: 'index.html' %}
+<header class="site-header">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="">
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">{{ site.title }}</span>
+        <span class="brand-affiliation">Department of Statistics, INHA University</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
+      {% for item in site.navigation %}
+        {% assign item_url = item.url %}
+        <a href="{{ item.url | relative_url }}" class="{% if current_url == item_url %}is-active{% endif %}">
+          {{ item.title }}
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

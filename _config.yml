@@ -1,0 +1,40 @@
+title: Bayesian Inference LAB
+description: Bayesian parametric and nonparametric modeling, Bayesian computation, and uncertainty-aware data science at INHA University.
+url: ""
+baseurl: ""
+lang: en
+timezone: Asia/Seoul
+
+markdown: kramdown
+permalink: pretty
+
+navigation:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: People
+    url: /people/
+  - title: Publications
+    url: /publications/
+  - title: Software
+    url: /software/
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /contact/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .bundle
+  - _site
+  - "*.log"
