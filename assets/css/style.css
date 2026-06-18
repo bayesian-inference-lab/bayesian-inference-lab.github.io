@@ -307,6 +307,52 @@ a:hover {
   object-position: center 42%;
 }
 
+.neon-credit {
+  padding: 0.45rem 0.6rem 0.55rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.neon-credit a {
+  position: relative;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.neon-credit a:hover,
+.neon-credit a:focus-visible {
+  color: var(--blue);
+}
+
+.neon-credit a::after {
+  content: "Thanks to Matt Buck for the photo.";
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 8px);
+  z-index: 3;
+  width: max-content;
+  max-width: min(260px, 80vw);
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: 0 10px 24px rgba(15, 47, 69, 0.12);
+  color: var(--ink);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.neon-credit a:hover::after,
+.neon-credit a:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .section.alt {
   background: var(--surface);
 }
