@@ -148,7 +148,6 @@ bundle exec jekyll build
 | 페이지 | 파일 |
 | --- | --- |
 | Home | `index.html` |
-| Research | `research.html` |
 | People | `people.html` |
 | Publications | `publications.html` |
 | Software | `software.html` |
@@ -230,8 +229,8 @@ bundle exec jekyll build
 navigation:
   - title: Home
     url: /
-  - title: Research
-    url: /research/
+  - title: People
+    url: /people/
 ```
 
 새 페이지를 추가하려면 다음 두 가지를 모두 해야 합니다.
