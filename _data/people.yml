@@ -17,13 +17,14 @@
 - name: "Cheolgyu Jang"
   position: "Ph.D. Student"
   group: "Ph.D. Students"
-  interests: "Bayesian inference"
+  interests: "Bayesian Machine Learning, Deep Learning"
   image: "/assets/img/person-placeholder.svg"
 
 - name: "Junhee Kim"
   position: "Master's Student"
   group: "Master's Students"
   interests: "Bayesian inference"
+  email: "kim8881472@gmail.com"
   image: "/assets/img/person-placeholder.svg"
 
 - name: "Seonghyuk Park"
