@@ -42,11 +42,3 @@ bundle exec jekyll serve
 
 The site will be available at `http://localhost:4000`.
 
-## Information Still Needed
-
-- Profile photos for the PI and students
-- Optional student-specific research interests, emails, and profile links
-- Publication-specific links, if needed
-- Missing software URLs for PyBSAM, dssm, intakeBLUP, bpruiso, and HSMF
-- Funded project information
-- Preferred domain or GitHub Pages URL
