@@ -34,11 +34,11 @@
   image: "/assets/img/parkseonghyeok.png"
   email: "tjdgur7065@gmail.com"
   
-- name: "Sunggwoon Jeong"
+- name: "Sungwoon Jeong"
   position: "Master's Student"
   group: "Master's Students"
-  interests: "Bayesian inference"
-  image: "/assets/img/person-placeholder.svg"
+  interests: "Time Series Analysis, Bayesian Machine Learning"
+  image: "/assets/img/jeongsungwoon.png"
   email: "email : yeumjungsy042@gmail.com"
   
 - name: "Sooha Cho"
