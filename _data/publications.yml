@@ -1,3 +1,10 @@
+- year: 2026
+  status: "In Presentation"
+  title: "A Domain-Informed Composite Kernel Gaussian Process Classifier for Molecular Toxicity Prediction with Principled Uncertainty Quantification"
+  authors: "Junhee Kim, Seongil Jo, Joonyeon Koo, Jaeoh Kim and Keunhong Jeong"
+  # venue: ""
+  # link: ""
+
 - year: 2025
   status: "Published"
   title: "A Bayesian Deep Kernel Regression Approach to Nonstationary Sensor Data Analysis"
@@ -32,3 +39,4 @@
   authors: "Jeongin Lee, Jaeoh Kim, and Seongil Jo*"
   venue: "The Korean Journal of Applied Statistics, 37(3), 339-353"
   link: "https://www.kjas.or.kr/journal/view.html?doi=10.5351/KJAS.2024.37.3.339"
+
