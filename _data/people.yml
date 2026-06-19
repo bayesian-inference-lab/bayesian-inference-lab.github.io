@@ -31,13 +31,13 @@
   position: "Master's Student"
   group: "Master's Students"
   interests: "Bayesian inference"
-  image: "/assets/img/person-placeholder.svg"
+  image: "assets/img/parkseonghyeok.jpg"
 
 - name: "Sunggwoon Jeong"
   position: "Master's Student"
   group: "Master's Students"
   interests: "Bayesian inference"
-  image: "/assets/img/person-placeholder.svg"
+  image: "assets/img/jeongsunggwoon.jpg"
 
 - name: "Sooha Cho"
   position: "Master's Student"
@@ -49,7 +49,7 @@
   position: "Undergraduate Student"
   group: "Undergraduate Students"
   interests: "Financial risk time series analysis"
-  image: "/assets/img/person-placeholder.svg"
+  image: "assets/img/kimdonghwan.png"
 
 - name: "Yeonggwon Yu"
   position: "Undergraduate Student"
