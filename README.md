@@ -142,6 +142,7 @@ bundle exec jekyll build
 | 논문 | `_data/publications.yml` |
 | 소프트웨어 | `_data/software.yml` |
 | 프로젝트 | `_data/projects.yml` |
+| 사진 갤러리 | `_data/photos.yml` |
 
 페이지 파일은 프로젝트 루트에 있습니다.
 
@@ -228,7 +229,23 @@ bundle exec jekyll build
 
 현재 사이트에서는 `이름: 설명` 형식으로 보여줍니다.
 
-## 12. 메뉴 수정 방법
+## 12. Photo 수정 방법
+
+사진 갤러리는 `_data/photos.yml`에서 수정합니다.
+
+예시:
+
+```yaml
+- title: Photo title
+  image: /assets/img/photo-file.jpg
+  caption: Short caption.
+  credit: Photographer name
+  link: https://example.com
+```
+
+사진 파일은 `assets/img/`에 넣고 `image` 경로를 연결합니다. `link`, `caption`, `credit`은 없어도 됩니다.
+
+## 13. 메뉴 수정 방법
 
 상단 메뉴는 `_config.yml`의 `navigation`에서 수정합니다.
 
@@ -247,7 +264,7 @@ navigation:
 1. 루트에 `new-page.html` 파일 생성
 2. `_config.yml`의 `navigation`에 메뉴 추가
 
-## 13. 이미지 수정 방법
+## 14. 이미지 수정 방법
 
 이미지는 보통 `assets/img/`에 넣습니다.
 
@@ -259,7 +276,7 @@ navigation:
 
 이미지를 바꾼 뒤에는 로컬 서버를 새로고침해서 확인합니다. 브라우저 캐시 때문에 이전 이미지가 보이면 `Ctrl + F5`로 강력 새로고침합니다.
 
-## 14. GitHub에 반영하기
+## 15. GitHub에 반영하기
 
 수정 후 아래 순서로 진행합니다.
 
@@ -279,7 +296,7 @@ git push
 3. `git status`로 변경 파일이 잡히는지 확인
 4. GitHub Actions 또는 Pages 배포가 끝났는지 확인
 
-## 15. 원격 저장소와 충돌이 날 때
+## 16. 원격 저장소와 충돌이 날 때
 
 다른 사람이 먼저 push한 경우 `git push`가 거절될 수 있습니다.
 
@@ -303,7 +320,7 @@ git commit -m "Resolve merge conflict"
 git push
 ```
 
-## 16. 권한 오류가 날 때
+## 17. 권한 오류가 날 때
 
 아래 오류가 나면 현재 GitHub 계정에 저장소 쓰기 권한이 없는 것입니다.
 
@@ -317,7 +334,7 @@ Permission denied
 2. 올바른 GitHub 계정으로 로그인했는지 확인
 3. Git Credential Manager에 저장된 잘못된 계정 정보를 삭제 후 다시 로그인
 
-## 17. 자주 보는 오류
+## 18. 자주 보는 오류
 
 ### `bundle` 명령어가 없음
 
@@ -349,7 +366,7 @@ bundle exec jekyll serve --port 4001
 
 `_site` 폴더는 빌드 결과물입니다. 원본 파일을 수정해야 합니다.
 
-## 18. 작업 전 추천 순서
+## 19. 작업 전 추천 순서
 
 작업을 시작하기 전에 원격 저장소의 최신 상태를 받습니다.
 
@@ -377,7 +394,7 @@ git commit -m "Update content"
 git push
 ```
 
-## 19. 주의사항
+## 20. 주의사항
 
 - `_site` 폴더는 직접 수정하지 않습니다.
 - 이미지 파일 이름에는 공백을 넣지 않는 것이 좋습니다.

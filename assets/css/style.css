@@ -508,6 +508,41 @@ a:hover {
   font-size: 1.02rem;
 }
 
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.photo-item {
+  margin: 0;
+}
+
+.photo-item a {
+  display: block;
+  color: inherit;
+}
+
+.photo-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.photo-item figcaption {
+  display: grid;
+  gap: 0.15rem;
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.photo-item figcaption strong {
+  color: var(--blue-deep);
+}
+
 .empty-state {
   border: 1px dashed #b8c9d1;
   border-radius: var(--radius);
@@ -771,6 +806,7 @@ a:hover {
   .grid.two,
   .split,
   .people-grid,
+  .photo-grid,
   .contact-panel {
     grid-template-columns: 1fr;
   }
