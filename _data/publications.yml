@@ -1,27 +1,3 @@
-- year: 2026
-  title: "Scalable and optimal Bayesian inference for sparse covariance matrices via screened beta-mixture prior"
-  authors: "Kyoungjae Lee, Kyoungwon Lee, Seongil Jo*, and Jaeyong Lee"
-  venue: "Bayesian Analysis, in press"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2026
-  title: "Frequency-Aware Priors for Variational Autoencoders under Class Imbalance"
-  authors: "Soomin Kwon, Seongil Jo*, and Jaeoh Kim*"
-  venue: "Neurocomputing, 681, 132967"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2026
-  title: "Accelerated Bayesian Kernel Machine Regression: A Gaussian Variational Approximation with the Horseshoe Prior"
-  authors: "Seongil Jo, Shinhee Yeh, Georg Hanh, and Woojoo Lee*"
-  venue: "Statistics and Computing, 36(2), 76:1-18"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2025
-  title: "bspcov: an R package for Bayesian sparse covariance matrix estimation"
-  authors: "Kyeongwon Lee, Kyoungjae Lee, Seongil Jo*, and Kwangmin Lee*"
-  venue: "SoftwareX, 32, 102338"
-  link: "https://github.com/statjs/bspcov"
-
 - year: 2025
   title: "A Bayesian Deep Kernel Regression Approach to Nonstationary Sensor Data Analysis"
   authors: "Gyumin Choi and Seongil Jo*"

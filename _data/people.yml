@@ -30,9 +30,10 @@
 - name: "Seonghyeok Park"
   position: "Master's Student"
   group: "Master's Students"
-  interests: "Bayesian inference"
+  interests: "Sequantial Monte Carlo, Information Criterion, Conformal Prediction, Generalized Method of Moments"
   image: "assets/img/parkseonghyeok.jpg"
-
+  email: "tjdgur7065@gmail.com"
+  
 - name: "Sunggwoon Jeong"
   position: "Master's Student"
   group: "Master's Students"
@@ -51,7 +52,7 @@
   interests: "Financial risk time series analysis"
   image: "assets/img/kimdonghwan.png"
   email: "527hohohaha@inha.edu"
-  
+
 - name: "Yeonggwon Yu"
   position: "Undergraduate Student"
   group: "Undergraduate Students"
