@@ -43,7 +43,7 @@
   position: "Master's Student"
   group: "Master's Students"
   interests: "Clinical statistics, Bayesian inference"
-  image: "/assets/img/chosooha.png"
+  image: "assets/img/chosooha.png"
 
 - name: "Donghwan Kim"
   position: "Undergraduate Student"
