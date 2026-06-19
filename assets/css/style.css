@@ -732,6 +732,12 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.person-current {
+  margin-top: 0.25rem;
+  color: #334851;
+  font-weight: 700;
+}
+
 .person-links {
   display: flex;
   flex-wrap: wrap;

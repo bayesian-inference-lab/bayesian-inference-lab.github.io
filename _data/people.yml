@@ -63,19 +63,23 @@
 - name: "Taemin Jeong"
   position: "MS, 2024.02"
   group: "Alumni"
+  current: "NICE 평가정보"
   image: "/assets/img/person-placeholder.svg"
 
 - name: "Inyoung Back"
   position: "MS, 2025.02"
   group: "Alumni"
+  current: "CATCHTABLE"
   image: "/assets/img/person-placeholder.svg"
 
 - name: "Gyumin Choi"
   position: "MS, 2025.08"
   group: "Alumni"
+  current: "INEEJI"
   image: "/assets/img/person-placeholder.svg"
 
 - name: "Jeongin Lee"
   position: "MS, 2026.02"
   group: "Alumni"
+  current: "PFCT"
   image: "/assets/img/leejeongin.png"

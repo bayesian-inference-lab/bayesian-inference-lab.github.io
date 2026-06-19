@@ -181,6 +181,16 @@ bundle exec jekyll build
   github: https://github.com/example
 ```
 
+Alumni의 현재 소속이나 직장은 `current`에 적습니다.
+
+```yaml
+- name: Alumni Name
+  position: MS, 2025.02
+  group: Alumni
+  current: Company or university name
+  image: /assets/img/person-placeholder.svg
+```
+
 사용 가능한 group 예시:
 
 - `Principal Investigator`

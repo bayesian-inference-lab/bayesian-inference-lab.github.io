@@ -63,6 +63,7 @@ permalink: /people/
                   <h3>{{ person.name }}</h3>
                   <p class="person-position">{{ person.position }}</p>
                   {% if person.interests %}<p>{{ person.interests }}</p>{% endif %}
+                  {% if person.current and person.current != "" %}<p class="person-current">Current: {{ person.current }}</p>{% endif %}
                   <div class="person-links">
                     {% if person.email and person.email != "" %}<a href="mailto:{{ person.email }}">Email</a>{% endif %}
                     {% if person.website and person.website != "" %}<a href="{{ person.website }}" rel="noreferrer">Website</a>{% endif %}
