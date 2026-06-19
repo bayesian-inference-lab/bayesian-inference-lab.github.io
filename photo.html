@@ -13,6 +13,27 @@ permalink: /photo/
 
 <section class="page-section">
   <div class="section-inner">
-    <div class="empty-state">Photos will be added here.</div>
+    {% if site.data.photos and site.data.photos.size > 0 %}
+      <div class="photo-grid">
+        {% for photo in site.data.photos %}
+          <figure class="photo-item">
+            {% if photo.link and photo.link != "" %}
+              <a href="{{ photo.link }}" rel="noreferrer">
+                <img src="{{ photo.image | relative_url }}" alt="{{ photo.title }}">
+              </a>
+            {% else %}
+              <img src="{{ photo.image | relative_url }}" alt="{{ photo.title }}">
+            {% endif %}
+            <figcaption>
+              <strong>{{ photo.title }}</strong>
+              {% if photo.caption and photo.caption != "" %}<span>{{ photo.caption }}</span>{% endif %}
+              {% if photo.credit and photo.credit != "" %}<span>Photo: {{ photo.credit }}</span>{% endif %}
+            </figcaption>
+          </figure>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">Photos will be added here.</div>
+    {% endif %}
   </div>
 </section>

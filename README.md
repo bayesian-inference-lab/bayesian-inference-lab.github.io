@@ -201,8 +201,17 @@ bundle exec jekyll build
   authors: Author A, Author B
   venue: Journal Name
   year: 2026
+  status: Published
   link: https://doi.org/...
 ```
+
+사용 가능한 `status` 값:
+
+- `Published`
+- `Accepted`
+- `Under Review`
+- `Working Papers`
+- `In Preparation`
 
 현재 사이트에서는 논문별로 `Link` 버튼만 보여줍니다. DOI, PDF, Code를 따로 나누어 표시하지 않습니다.
 

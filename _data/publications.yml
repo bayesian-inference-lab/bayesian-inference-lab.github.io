@@ -1,30 +1,34 @@
 - year: 2025
+  status: "Published"
   title: "A Bayesian Deep Kernel Regression Approach to Nonstationary Sensor Data Analysis"
   authors: "Gyumin Choi and Seongil Jo*"
   venue: "Journal of the Korean Data & Information Science Society, 36(6), 957-972"
   link: "https://www.kdiss.org/journal/view.html?uid=3103&&vmd=Full"
 
 - year: 2025
+  status: "Published"
   title: "Predicting flatfish growth in Aquaculture using Bayesian deep kernel machines"
   authors: "Junhee Kim, Seung-Won Seo, Ho-Jin Jung, Hyunseok Jang, Han-Kyu Lim, and Seongil Jo*"
   venue: "Applied Sciences, 12(17), 9487"
   link: "https://www.mdpi.com/2076-3417/15/17/9487"
 
 - year: 2025
+  status: "Published"
   title: "Identification of functional dynamic brain states based on graph attention networks"
   authors: "Inyoung Baek, Jongyoung Namgung, Yeongjun Park, Seongil Jo*, and Bo-young Park*"
   venue: "Neuroimage, 311(1), 121185"
   link: "https://www.sciencedirect.com/science/article/pii/S1053811925001879"
 
 - year: 2025
+  status: "Published"
   title: "A weighted Bayesian kernel machine regression approach for predicting the growth of indoor-cultured abalone"
   authors: "Seung-Won Seo, Gyumin Choi, Ho-Jin Jung, Mi-Jin Choi, Young-Dae Oh, Hyun-Seok Jang, Han-Kyu Lim*, and Seongil Jo*"
   venue: "Applied Sciences, 15(708), 1-16"
   link: "https://www.mdpi.com/2076-3417/15/2/708"
 
 - year: 2024
+  status: "Published"
   title: "A study on Bayesian beta regressions for modelling rates and proportions"
   authors: "Jeongin Lee, Jaeoh Kim, and Seongil Jo*"
   venue: "The Korean Journal of Applied Statistics, 37(3), 339-353"
   link: "https://www.kjas.or.kr/journal/view.html?doi=10.5351/KJAS.2024.37.3.339"
-

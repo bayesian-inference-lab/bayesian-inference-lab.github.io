@@ -14,29 +14,35 @@ permalink: /publications/
 <section class="page-section">
   <div class="section-inner">
     {% if site.data.publications and site.data.publications.size > 0 %}
-      {% assign years = site.data.publications | map: "year" | uniq | sort | reverse %}
-      {% for year in years %}
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">{{ year }}</p>
-            <h2>{{ year }}</h2>
+      {% assign status_order = "Published,Accepted,Under Review,Working Papers,In Preparation" | split: "," %}
+      {% for status in status_order %}
+        {% assign status_items = site.data.publications | where: "status", status %}
+        {% if status_items.size > 0 %}
+          <div class="section-header publication-group-header">
+            <div>
+              <h2>{{ status }}</h2>
+            </div>
           </div>
-        </div>
-        <ul class="publication-list">
-          {% assign items = site.data.publications | where: "year", year %}
-          {% for paper in items %}
-            <li class="publication-item">
-              <p class="publication-title">{{ paper.title }}</p>
-              <p class="publication-authors">{{ paper.authors }}</p>
-              <p class="publication-venue">{{ paper.venue }}</p>
-              {% if paper.link %}
-                <div class="publication-meta">
-                  <a href="{{ paper.link }}" rel="noreferrer">Link</a>
-                </div>
-              {% endif %}
-            </li>
+          {% assign years = status_items | map: "year" | uniq | sort | reverse %}
+          {% for year in years %}
+            <div class="publication-year">{{ year }}</div>
+            <ul class="publication-list">
+              {% assign items = status_items | where: "year", year %}
+              {% for paper in items %}
+                <li class="publication-item">
+                  <p class="publication-title">{{ paper.title }}</p>
+                  <p class="publication-authors">{{ paper.authors }}</p>
+                  <p class="publication-venue">{{ paper.venue }}</p>
+                  {% if paper.link and paper.link != "" %}
+                    <div class="publication-meta">
+                      <a href="{{ paper.link }}" rel="noreferrer">Link</a>
+                    </div>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
           {% endfor %}
-        </ul>
+        {% endif %}
       {% endfor %}
     {% else %}
       <div class="empty-state">Publications will be listed here.</div>

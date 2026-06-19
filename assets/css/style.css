@@ -455,6 +455,21 @@ a:hover {
   list-style: none;
 }
 
+.publication-group-header {
+  margin-top: 3rem;
+}
+
+.section-inner > .publication-group-header:first-child {
+  margin-top: 0;
+}
+
+.publication-year {
+  margin: 1.3rem 0 0.7rem;
+  color: var(--gold);
+  font-size: 0.84rem;
+  font-weight: 900;
+}
+
 .software-list {
   gap: 0.55rem;
 }
