@@ -39,13 +39,14 @@
   group: "Master's Students"
   interests: "Time Series Analysis, Bayesian Machine Learning"
   image: "/assets/img/jeongsungwoon.png"
-  email: "email : yeumjungsy042@gmail.com"
+  email: "yeumjungsy042@gmail.com"
   
 - name: "Sooha Cho"
   position: "Master's Student"
   group: "Master's Students"
   interests: "Clinical statistics, Bayesian inference"
   image: "/assets/img/chosooha.png"
+  email: "soo.tw0water@gmail.com"
 
 - name: "Donghwan Kim"
   position: "Undergraduate Student"
