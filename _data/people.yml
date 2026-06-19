@@ -27,13 +27,13 @@
   image: "assets/img/kimjunhee.jpg"
   github: "https://github.com/joon0390"
   
-- name: "Seonghyuk Park"
+- name: "Seonghyeok Park"
   position: "Master's Student"
   group: "Master's Students"
   interests: "Bayesian inference"
   image: "/assets/img/person-placeholder.svg"
 
-- name: "Seongwoon Jeong"
+- name: "Sunggwoon Jeong"
   position: "Master's Student"
   group: "Master's Students"
   interests: "Bayesian inference"
@@ -46,10 +46,17 @@
   image: "/assets/img/person-placeholder.svg"
 
 - name: "Donghwan Kim"
-  position: "Master's Student"
-  group: "Master's Students"
+  position: "Undergraduate Student"
+  group: "Undergraduate Students"
   interests: "Financial risk time series analysis"
   image: "/assets/img/person-placeholder.svg"
+
+- name: "Yeonggwon Yu"
+  position: "Undergraduate Student"
+  group: "Undergraduate Students"
+  interests: "Bayesian inference"
+  image: "/assets/img/person-placeholder.svg"
+
 
 - name: "Taemin Jeong"
   position: "MS, 2024.02"
