@@ -2,64 +2,29 @@
   title: "A Bayesian Deep Kernel Regression Approach to Nonstationary Sensor Data Analysis"
   authors: "Gyumin Choi and Seongil Jo*"
   venue: "Journal of the Korean Data & Information Science Society, 36(6), 957-972"
-  link: "https://sites.google.com/view/bstatjo/research"
+  link: "https://www.kdiss.org/journal/view.html?uid=3103&&vmd=Full"
 
 - year: 2025
   title: "Predicting flatfish growth in Aquaculture using Bayesian deep kernel machines"
   authors: "Junhee Kim, Seung-Won Seo, Ho-Jin Jung, Hyunseok Jang, Han-Kyu Lim, and Seongil Jo*"
   venue: "Applied Sciences, 12(17), 9487"
-  link: "https://sites.google.com/view/bstatjo/research"
+  link: "https://www.mdpi.com/2076-3417/15/17/9487"
 
 - year: 2025
   title: "Identification of functional dynamic brain states based on graph attention networks"
   authors: "Inyoung Baek, Jongyoung Namgung, Yeongjun Park, Seongil Jo*, and Bo-young Park*"
   venue: "Neuroimage, 311(1), 121185"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2025
-  title: "A Bayesian time-varying coefficient model for Cobb-Douglas production function"
-  authors: "Jongwoo Choi, Seongil Jo*, and Jaeoh Kim*"
-  venue: "Computational Economics"
-  link: "https://doi.org/10.1007/s10614-024-10598-1"
+  link: "https://www.sciencedirect.com/science/article/pii/S1053811925001879"
 
 - year: 2025
   title: "A weighted Bayesian kernel machine regression approach for predicting the growth of indoor-cultured abalone"
   authors: "Seung-Won Seo, Gyumin Choi, Ho-Jin Jung, Mi-Jin Choi, Young-Dae Oh, Hyun-Seok Jang, Han-Kyu Lim*, and Seongil Jo*"
   venue: "Applied Sciences, 15(708), 1-16"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2025
-  title: "Improving vapor pressure prediction through integration of multiple molecular representations: a super learner approach"
-  authors: "Jihyun Nam, Seul Lee, Seongil Jo, Jaeoh Kim, Jooyeon Lee, Jahyun Koo, Byounghwak Lee, Keunhong Jeong, and Dongghyeon Yu"
-  venue: "Journal of Chemometrics, 39(2), e70003"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2024
-  title: "Improvement of SAR target classification using GAN-based data augmentation and wavelet transformation"
-  authors: "Jaeoh Kim, Chulhee Han, Jungman Lee, Woo-Seop Yun, Seojin Lee, Taehoon Yang, Donghyeon Yu*, and Seongil Jo*"
-  venue: "Military Operations Research Journal, 29, 91-103"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2024
-  title: "Prediction of flash point of materials using Bayesian kernel machine regression based on Gaussian processes with LASSO-like spike-and-slab hyperprior"
-  authors: "Keunhong Jeong, Jihyun Nam, Seul Lee, Jahyun Koo, Jooyeon Lee, Donghyun Yu, Seongil Jo*, and Jaeoh Kim*"
-  venue: "Journal of Chemometrics, 38, e3586"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2024
-  title: "Estimation of World Seroprevalence of SARS-CoV-2 antibodies"
-  authors: "Kwangmin Lee, Seongmin Kim, Seongil Jo*, and Jaeyong Lee"
-  venue: "Journal of Applied Statistics, 51, 3039-3058"
-  link: "https://sites.google.com/view/bstatjo/research"
-
-- year: 2024
-  title: "Prediction of forest fire risk for artillery military training using weighted support vector machine for imbalanced data"
-  authors: "Jihyun Nam, Jongmin Mun, Seongil Jo*, and Jaeoh Kim*"
-  venue: "Journal of Classification, 41, 170-189"
-  link: "https://sites.google.com/view/bstatjo/research"
+  link: "https://www.mdpi.com/2076-3417/15/2/708"
 
 - year: 2024
   title: "A study on Bayesian beta regressions for modelling rates and proportions"
   authors: "Jeongin Lee, Jaeoh Kim, and Seongil Jo*"
   venue: "The Korean Journal of Applied Statistics, 37(3), 339-353"
-  link: "https://sites.google.com/view/bstatjo/research"
+  link: "https://www.kjas.or.kr/journal/view.html?doi=10.5351/KJAS.2024.37.3.339"
+

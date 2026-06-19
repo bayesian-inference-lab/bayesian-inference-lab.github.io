@@ -571,25 +571,31 @@ a:hover {
 }
 
 .person-card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 8px 22px rgba(15, 47, 69, 0.06);
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .person-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-  object-position: center;
-  padding: 0.9rem;
-  background: #fff;
-  border-bottom: 1px solid var(--line);
+  width: 112px;
+  height: 112px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 24%;
+  padding: 0;
+  background: transparent;
 }
 
 .person-body {
-  padding: 1.1rem;
+  min-width: 0;
+  padding: 0;
 }
 
 .person-body h3 {
