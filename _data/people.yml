@@ -43,7 +43,7 @@
   position: "Master's Student"
   group: "Master's Students"
   interests: "Clinical statistics, Bayesian inference"
-  image: "/assets/img/person-placeholder.svg"
+  image: "/assets/img/chosooha.png"
 
 - name: "Donghwan Kim"
   position: "Undergraduate Student"
@@ -56,7 +56,6 @@
   group: "Undergraduate Students"
   interests: "Bayesian inference"
   image: "/assets/img/person-placeholder.svg"
-
 
 - name: "Taemin Jeong"
   position: "MS, 2024.02"
