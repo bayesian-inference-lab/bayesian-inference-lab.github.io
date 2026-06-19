@@ -518,9 +518,19 @@ a:hover {
   margin: 0;
 }
 
-.photo-item a {
+.gallery-photo-button {
   display: block;
-  color: inherit;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.gallery-photo-button:focus-visible {
+  outline: 3px solid rgba(20, 127, 122, 0.35);
+  outline-offset: 3px;
 }
 
 .photo-item img {
@@ -541,6 +551,11 @@ a:hover {
 
 .photo-item figcaption strong {
   color: var(--blue-deep);
+}
+
+.photo-item figcaption a {
+  color: var(--blue);
+  font-weight: 800;
 }
 
 .empty-state {

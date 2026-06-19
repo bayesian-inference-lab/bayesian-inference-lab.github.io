@@ -12,10 +12,10 @@
 })();
 
 (function () {
-  const modal = document.querySelector("#person-photo-modal");
+  const modal = document.querySelector("#photo-preview-modal, #person-photo-modal");
   const modalImage = modal ? modal.querySelector("img") : null;
   const closeButtons = modal ? modal.querySelectorAll(".photo-modal-backdrop, .photo-modal-close") : [];
-  const photoButtons = document.querySelectorAll(".person-photo-button");
+  const photoButtons = document.querySelectorAll(".photo-preview-button");
 
   if (!modal || !modalImage || photoButtons.length === 0) {
     return;

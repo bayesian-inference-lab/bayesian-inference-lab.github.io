@@ -17,17 +17,23 @@ permalink: /photo/
       <div class="photo-grid">
         {% for photo in site.data.photos %}
           <figure class="photo-item">
-            {% if photo.link and photo.link != "" %}
-              <a href="{{ photo.link }}" rel="noreferrer">
-                <img src="{{ photo.image | relative_url }}" alt="{{ photo.title }}">
-              </a>
-            {% else %}
-              <img src="{{ photo.image | relative_url }}" alt="{{ photo.title }}">
-            {% endif %}
+            {% assign photo_image = photo.image | relative_url %}
+            <button class="photo-preview-button gallery-photo-button" type="button" data-photo-src="{{ photo_image }}" data-photo-alt="{{ photo.title }}">
+              <img src="{{ photo_image }}" alt="{{ photo.title }}">
+            </button>
             <figcaption>
               <strong>{{ photo.title }}</strong>
               {% if photo.caption and photo.caption != "" %}<span>{{ photo.caption }}</span>{% endif %}
-              {% if photo.credit and photo.credit != "" %}<span>Photo: {{ photo.credit }}</span>{% endif %}
+              {% if photo.credit and photo.credit != "" %}
+                <span>
+                  Photo:
+                  {% if photo.link and photo.link != "" %}
+                    <a href="{{ photo.link }}" rel="noreferrer">{{ photo.credit }}</a>
+                  {% else %}
+                    {{ photo.credit }}
+                  {% endif %}
+                </span>
+              {% endif %}
             </figcaption>
           </figure>
         {% endfor %}
@@ -37,3 +43,11 @@ permalink: /photo/
     {% endif %}
   </div>
 </section>
+
+<div class="photo-modal" id="photo-preview-modal" aria-hidden="true">
+  <button class="photo-modal-backdrop" type="button" aria-label="Close image preview"></button>
+  <div class="photo-modal-dialog" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="photo-modal-close" type="button" aria-label="Close image preview">Close</button>
+    <img src="" alt="">
+  </div>
+</div>
