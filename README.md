@@ -223,6 +223,7 @@ Alumni의 현재 소속이나 직장은 `current`에 적습니다.
 - `Under Review`
 - `Working Papers`
 - `In Preparation`
+- `In Presentation`
 
 현재 사이트에서는 논문별로 `Link` 버튼만 보여줍니다. DOI, PDF, Code를 따로 나누어 표시하지 않습니다.
 
