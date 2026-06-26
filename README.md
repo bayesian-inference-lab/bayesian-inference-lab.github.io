@@ -230,12 +230,12 @@ Alumni의 현재 소속이나 직장은 `current`에 적습니다.
 
 사용 가능한 `status` 값:
 
-- `Published`
-- `Accepted`
-- `Under Review`
-- `Working Papers`
 - `In Preparation`
 - `In Presentation`
+- `Under Review`
+- `Working Papers`
+- `Accepted`
+- `Published`
 
 현재 사이트에서는 논문별로 `Link` 버튼만 보여줍니다. DOI, PDF, Code를 따로 나누어 표시하지 않습니다.
 

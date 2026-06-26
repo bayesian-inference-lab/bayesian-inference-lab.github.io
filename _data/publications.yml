@@ -4,6 +4,13 @@
   authors: "Junhee Kim, Seongil Jo, Joonyeon Koo, Jaeoh Kim and Keunhong Jeong"
   # venue: ""
   # link: ""
+  
+- year: 2026
+  status: "In Preparation"
+  title: "Gaussian Process-Based Bayesian Optimization for One-Class Classification"
+  authors: "Inyoung Beak, Junhee Kim, Yeongmin Lee, Jaeoh Kim and Seongil Jo"
+  # venue: ""
+  # link: ""
 
 - year: 2025
   status: "Published"

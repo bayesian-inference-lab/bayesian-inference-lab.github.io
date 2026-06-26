@@ -14,7 +14,7 @@ permalink: /publications/
 <section class="page-section">
   <div class="section-inner">
     {% if site.data.publications and site.data.publications.size > 0 %}
-      {% assign status_order = "Published,Accepted,Under Review,Working Papers,In Preparation,In Presentation" | split: "," %}
+      {% assign status_order = "In Preparation,In Presentation,Under Review,Working Papers,Accepted,Published" | split: "," %}
       {% for status in status_order %}
         {% assign status_items = site.data.publications | where: "status", status %}
         {% if status_items.size > 0 %}
