@@ -5,6 +5,7 @@
   --ink: #17242b;
   --muted: #5c6c73;
   --line: #dce6ea;
+  --section-line: #c7d5dc;
   --blue: #0f4f6e;
   --blue-deep: #0b2f45;
   --teal: #147f7a;
@@ -13,8 +14,8 @@
   --shadow: 0 16px 36px rgba(15, 47, 69, 0.12);
   --radius: 8px;
   --max: 1160px;
-  --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: "Aptos", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+  --font-display: Cambria, Constantia, Georgia, "Times New Roman", Times, serif;
 }
 
 * {
@@ -112,13 +113,13 @@ a:hover {
 }
 
 .brand-name {
-  font-weight: 800;
+  font-weight: 700;
   color: var(--ink);
 }
 
 .brand-affiliation {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.92rem;
 }
 
 .site-nav {
@@ -130,7 +131,7 @@ a:hover {
 .site-nav a {
   color: var(--muted);
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0.56rem 0.6rem;
   border-radius: 6px;
 }
@@ -187,9 +188,9 @@ a:hover {
 .eyebrow {
   display: inline-flex;
   color: var(--teal);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0;
   text-transform: uppercase;
   margin-bottom: 0.95rem;
 }
@@ -198,7 +199,7 @@ a:hover {
 .page-hero h1 {
   margin: 0;
   color: var(--blue-deep);
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(2.7rem, 6vw, 5.4rem);
   line-height: 1.08;
@@ -213,6 +214,30 @@ a:hover {
   color: #31444d;
   font-size: clamp(1.05rem, 2vw, 1.28rem);
   line-height: 1.72;
+}
+
+.hero-quote {
+  max-width: 640px;
+  margin: 1.4rem 0 0;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 3px solid rgba(20, 127, 122, 0.62);
+  color: #31444d;
+}
+
+.hero-quote p {
+  margin: 0;
+  color: var(--blue-deep);
+  font-family: var(--font-sans);
+  font-size: clamp(1.18rem, 2vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.hero-quote footer {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.8vw, 1.18rem);
+  line-height: 1.45;
 }
 
 .hero-actions {
@@ -233,7 +258,7 @@ a:hover {
   border-radius: 8px;
   background: var(--blue);
   color: #fff;
-  font-weight: 800;
+  font-weight: 650;
 }
 
 .button:hover {
@@ -252,115 +277,59 @@ a:hover {
   color: var(--teal);
 }
 
-.quick-facts {
-  width: min(100% - 32px, var(--max));
-  margin: -2.2rem auto 0;
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-}
-
-.quick-fact {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1rem 1.1rem;
-  box-shadow: 0 8px 22px rgba(15, 47, 69, 0.07);
-}
-
-.quick-fact strong {
-  display: block;
-  color: var(--blue-deep);
-  font-size: 0.98rem;
-  line-height: 1.25;
-}
-
-.quick-fact span {
-  color: var(--muted);
-  display: block;
-  margin-top: 0.25rem;
-  font-size: 0.88rem;
-  line-height: 1.45;
-}
-
 .section {
   padding: clamp(3rem, 7vw, 5.5rem) 0;
 }
 
+.hero + .section,
+.section + .section,
+.page-section + .page-section {
+  position: relative;
+}
+
+.hero + .section::before,
+.section + .section::before,
+.page-section + .page-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(100% - 32px, var(--max));
+  height: 1px;
+  background: var(--section-line);
+  transform: translateX(-50%);
+}
+
 .research-areas-section {
-  padding-bottom: 0;
+  padding-bottom: 1.8rem;
 }
 
 .action-section {
   padding-top: 1.6rem;
-  border-top: 1px solid var(--line);
 }
 
-.quick-facts + .section {
-  padding-top: clamp(3.8rem, 7vw, 5.5rem);
+.home-contact {
+  margin-top: 2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--section-line);
 }
 
-.neon-photo {
-  margin: 3.4rem 0 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--surface);
+.home-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem 1.2rem;
 }
 
-.neon-photo img {
-  width: 100%;
-  aspect-ratio: 1023 / 360;
-  object-fit: cover;
-  object-position: center 42%;
-}
-
-.neon-credit {
-  padding: 0.45rem 0.6rem 0.55rem;
+.home-contact-grid p {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0;
   color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.4;
 }
 
-.neon-credit a {
-  position: relative;
-  color: var(--muted);
+.home-contact-grid strong {
+  color: var(--blue-deep);
   font-weight: 700;
-}
-
-.neon-credit a:hover,
-.neon-credit a:focus-visible {
-  color: var(--blue);
-}
-
-.neon-credit a::after {
-  content: "Thanks to Matt Buck for the photo.";
-  position: absolute;
-  left: 0;
-  bottom: calc(100% + 8px);
-  z-index: 3;
-  width: max-content;
-  max-width: min(260px, 80vw);
-  padding: 0.45rem 0.55rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--surface);
-  box-shadow: 0 10px 24px rgba(15, 47, 69, 0.12);
-  color: var(--ink);
-  font-size: 0.78rem;
-  line-height: 1.35;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(4px);
-  transition: opacity 160ms ease, transform 160ms ease;
-}
-
-.neon-credit a:hover::after,
-.neon-credit a:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .section.alt {
@@ -379,8 +348,8 @@ a:hover {
   margin: 0 0 0.2rem;
   color: var(--gold);
   font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -388,7 +357,7 @@ a:hover {
 .page-section h2 {
   margin: 0;
   color: var(--blue-deep);
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(1.8rem, 4vw, 2.7rem);
   line-height: 1.1;
@@ -405,7 +374,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   color: var(--blue);
-  font-weight: 800;
+  font-weight: 650;
   white-space: nowrap;
 }
 
@@ -492,7 +461,7 @@ a:hover {
 .software-line a,
 .software-line strong {
   color: var(--blue-deep);
-  font-weight: 800;
+  font-weight: 650;
 }
 
 .publication-item,
@@ -747,7 +716,7 @@ a:hover {
 .person-position {
   margin: 0.15rem 0 0.65rem;
   color: var(--gold);
-  font-weight: 800;
+  font-weight: 650;
   font-size: 0.9rem;
 }
 
@@ -768,7 +737,7 @@ a:hover {
   flex-wrap: wrap;
   gap: 0.7rem;
   margin-top: 0.9rem;
-  font-weight: 800;
+  font-weight: 650;
   font-size: 0.9rem;
 }
 
@@ -781,7 +750,7 @@ a:hover {
   margin: 0;
   color: var(--blue-deep);
   font-size: 1.04rem;
-  font-weight: 800;
+  font-weight: 650;
 }
 
 .publication-authors,
@@ -898,12 +867,13 @@ a:hover {
       url("../img/hero-bayesian-lab.png") center center / cover no-repeat;
   }
 
-  .quick-facts,
   .grid.three,
   .grid.two,
   .split,
   .people-grid,
   .photo-grid,
+  .home-contact,
+  .home-contact-grid,
   .contact-panel {
     grid-template-columns: 1fr;
   }
@@ -922,7 +892,6 @@ a:hover {
   .hero-inner,
   .section-inner,
   .page-hero-inner,
-  .quick-facts,
   .footer-inner {
     width: min(100% - 24px, var(--max));
   }
@@ -937,7 +906,7 @@ a:hover {
   }
 
   .brand-affiliation {
-    font-size: 0.76rem;
+    font-size: 0.82rem;
   }
 
   .hero {
@@ -963,7 +932,6 @@ a:hover {
     width: 100%;
   }
 
-  .quick-fact,
   .card,
   .publication-item,
   .software-item,
