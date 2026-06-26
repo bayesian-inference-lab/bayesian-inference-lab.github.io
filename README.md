@@ -178,8 +178,20 @@ bundle exec jekyll build
   group: Master's Students
   email: example@inha.edu
   image: /assets/img/kimjunhee.jpg
+  photo_position: center 24%
   github: https://github.com/example
 ```
+
+원형 프로필 사진 안에서 얼굴 위치가 어색하면 `photo_position`을 조정합니다.
+
+예시:
+
+```yaml
+photo_position: center 12%
+photo_position: center 35%
+```
+
+두 번째 값이 작을수록 사진이 아래로 내려 보이고, 클수록 위로 올라가 보입니다.
 
 Alumni의 현재 소속이나 직장은 `current`에 적습니다.
 
