@@ -293,7 +293,7 @@ navigation:
 
 대표 이미지:
 
-- 로고: `assets/img/logo.png`
+- 로고: `assets/img/logo.svg`
 - 홈 화면 배경: `assets/img/hero-bayesian-lab.png`
 - 기본 인물 사진: `assets/img/person-placeholder.svg`
 
