@@ -27,7 +27,7 @@ permalink: /people/
               {% assign person_image = person.image | default: '/assets/img/person-placeholder.svg' | relative_url %}
               {% assign person_photo_position = person.photo_position | default: 'center 24%' %}
               <button class="person-photo-button photo-preview-button" type="button" data-photo-src="{{ person_image }}" data-photo-alt="{{ person.name }}" style="--photo-position: {{ person_photo_position }};">
-                <img src="{{ person_image }}" alt="{{ person.name }}">
+                <img src="{{ person_image }}" alt="{{ person.name }}" width="152" height="152" loading="lazy" decoding="async">
               </button>
               <div class="person-body">
                 <h3>{{ person.name }}</h3>
@@ -59,7 +59,7 @@ permalink: /people/
                 {% assign person_image = person.image | default: '/assets/img/person-placeholder.svg' | relative_url %}
                 {% assign person_photo_position = person.photo_position | default: 'center 24%' %}
                 <button class="person-photo-button photo-preview-button" type="button" data-photo-src="{{ person_image }}" data-photo-alt="{{ person.name }}" style="--photo-position: {{ person_photo_position }};">
-                  <img src="{{ person_image }}" alt="{{ person.name }}">
+                <img src="{{ person_image }}" alt="{{ person.name }}" width="152" height="152" loading="lazy" decoding="async">
                 </button>
                 <div class="person-body">
                   <h3>{{ person.name }}</h3>

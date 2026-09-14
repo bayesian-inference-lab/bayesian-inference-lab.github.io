@@ -181,7 +181,7 @@ a:hover {
 }
 
 .hero-content {
-  max-width: 680px;
+  max-width: var(--max);
   padding: 3rem 0 4rem;
 }
 
@@ -205,6 +205,10 @@ a:hover {
   line-height: 1.08;
   letter-spacing: 0;
   text-wrap: balance;
+}
+
+.hero h1 span {
+  display: block;
 }
 
 .hero-affiliation {
@@ -654,12 +658,12 @@ a:hover {
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .people-grid-pi {
-  grid-template-columns: minmax(0, 360px);
+  grid-template-columns: minmax(0, 480px);
   margin-bottom: 3rem;
 }
 
@@ -669,9 +673,11 @@ a:hover {
 
 .person-card {
   display: grid;
-  grid-template-columns: 112px minmax(0, 1fr);
-  gap: 1rem;
+  grid-template-columns: 152px minmax(0, 1fr);
+  gap: 1.2rem;
   align-items: center;
+  min-height: 176px;
+  padding: 0.75rem;
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -680,8 +686,8 @@ a:hover {
 }
 
 .person-photo-button {
-  width: 112px;
-  height: 112px;
+  width: 152px;
+  height: 152px;
   padding: 0;
   border: 0;
   border-radius: var(--radius);
@@ -695,8 +701,8 @@ a:hover {
 }
 
 .person-photo-button img {
-  width: 112px;
-  height: 112px;
+  width: 152px;
+  height: 152px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   object-fit: cover;
@@ -1003,7 +1009,7 @@ a:hover {
   .hero h1 {
     font-size: clamp(1.55rem, 7.4vw, 2.2rem);
     letter-spacing: -0.04em;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .hero-affiliation {
