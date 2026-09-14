@@ -987,17 +987,35 @@ a:hover {
   }
 
   .hero {
-    min-height: 640px;
+    min-height: 540px;
     align-items: start;
   }
 
   .hero-content {
-    padding-top: 4.5rem;
+    padding-top: 3.5rem;
   }
 
   .hero h1,
   .page-hero h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
+  }
+
+  .hero-affiliation {
+    font-size: 1rem;
+  }
+
+  .home-topic-list .topic {
+    grid-template-columns: 42px minmax(0, 1fr);
+    padding: 1rem 0;
+  }
+
+  .home-topic-list .topic-index {
+    font-size: 0.75rem;
+  }
+
+  .home-topic-list .topic h3 {
+    font-size: 1rem;
+    line-height: 1.35;
   }
 
   .hero-actions {
