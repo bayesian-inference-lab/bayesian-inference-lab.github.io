@@ -170,7 +170,7 @@ a:hover {
   overflow: hidden;
   background:
     linear-gradient(rgba(247, 250, 251, 0.58), rgba(247, 250, 251, 0.58)),
-    url("../img/hero-bayesian-lab.png") center center / cover no-repeat;
+    url("../../files/1210457_510132_1558.jpg") center center / cover no-repeat;
 }
 
 .hero-inner,
@@ -201,10 +201,18 @@ a:hover {
   color: var(--blue-deep);
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.7rem, 6vw, 5.4rem);
+  font-size: clamp(3.6rem, 8vw, 7.4rem);
   line-height: 1.08;
   letter-spacing: 0;
   text-wrap: balance;
+}
+
+.hero-affiliation {
+  margin: 1rem 0 0;
+  color: var(--teal);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .hero-lead,
@@ -864,7 +872,7 @@ a:hover {
   .hero {
     background:
       linear-gradient(rgba(247, 250, 251, 0.72), rgba(247, 250, 251, 0.72)),
-      url("../img/hero-bayesian-lab.png") center center / cover no-repeat;
+      url("../../files/1210457_510132_1558.jpg") center center / cover no-repeat;
   }
 
   .grid.three,
@@ -920,7 +928,7 @@ a:hover {
 
   .hero h1,
   .page-hero h1 {
-    font-size: 2.55rem;
+    font-size: 3rem;
   }
 
   .hero-actions {

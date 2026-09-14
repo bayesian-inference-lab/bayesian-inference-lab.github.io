@@ -17,8 +17,6 @@ navigation:
     url: /publications/
   - title: Software
     url: /software/
-  - title: Projects
-    url: /projects/
   - title: Photo
     url: /photo/
   - title: Contact
