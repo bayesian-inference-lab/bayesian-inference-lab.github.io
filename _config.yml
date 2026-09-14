@@ -19,8 +19,6 @@ navigation:
     url: /software/
   - title: Photo
     url: /photo/
-  - title: Contact
-    url: /contact/
 
 defaults:
   - scope:
