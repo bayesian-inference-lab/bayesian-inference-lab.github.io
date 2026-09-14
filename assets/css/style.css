@@ -589,22 +589,67 @@ a:hover {
 
 .topic-list {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
 }
 
 .topic {
-  border-left: 4px solid var(--teal);
-  padding: 0.25rem 0 0.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 132px;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--teal);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 8px 22px rgba(15, 47, 69, 0.06);
 }
 
 .topic h3 {
-  margin: 0 0 0.25rem;
+  margin: 0;
   color: var(--blue-deep);
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  line-height: 1.25;
 }
 
 .topic p {
-  margin: 0;
+  margin: 0.65rem 0 0;
   color: var(--muted);
+}
+
+.home-topic-list {
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--section-line);
+}
+
+.home-topic-list .topic {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: center;
+  min-height: 0;
+  padding: 1.35rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--section-line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.home-topic-list .topic-index {
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.home-topic-list .topic h3 {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 650;
 }
 
 .people-grid {
@@ -898,6 +943,7 @@ a:hover {
   .split,
   .people-grid,
   .photo-grid,
+  .topic-list,
   .home-contact,
   .home-contact-grid,
   .footer-contact-grid,
@@ -911,6 +957,10 @@ a:hover {
 
   .section-header .text-link {
     margin-top: 0.9rem;
+  }
+
+  .home-topic-list .topic {
+    grid-template-columns: 52px minmax(0, 1fr);
   }
 }
 
