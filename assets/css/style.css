@@ -216,7 +216,7 @@ a:hover {
 .hero-affiliation {
   margin: 1rem 0 0;
   color: #526b7a;
-  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  font-size: clamp(1.2rem, 2vw, 1.48rem);
   font-weight: 700;
   line-height: 1.4;
 }
