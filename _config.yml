@@ -1,12 +1,15 @@
 title: Bayesian Inference LAB
 description: Bayesian parametric and nonparametric modeling, Bayesian computation, and uncertainty-aware data science at INHA University.
-url: ""
+url: "https://bayesian-inference-lab.github.io"
 baseurl: ""
 lang: en
 timezone: Asia/Seoul
 
 markdown: kramdown
 permalink: pretty
+
+plugins:
+  - jekyll-sitemap
 
 navigation:
   - title: Home
