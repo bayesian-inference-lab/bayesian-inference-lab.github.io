@@ -57,10 +57,16 @@
   email: "527hohohaha@inha.edu"
 
 - name: "Yeonggwon Yu"
-  position: "Undergraduate Student"
-  group: "Undergraduate Students"
+  position: "Master's Student"
+  group: "Master's Students"
   interests: "Bayesian inference"
   image: "/assets/img/person-placeholder.svg"
+
+- name: "Vovin Kim"
+  position: "Undergraduate Student"
+  group: "Undergraduate Student"
+  interests: "State-Space Models, Sequential Monte Carlo Methods, Statistical Filtering and Smoothing "
+  image: "/assets/img/people/kimvovin.jpg"
 
 - name: "Taemin Jeong"
   position: "MS, 2024.02"
