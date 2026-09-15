@@ -383,6 +383,29 @@ a:hover {
   color: var(--muted);
 }
 
+.research-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.52fr) minmax(260px, 0.48fr);
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.research-signature {
+  width: min(100%, 460px);
+  margin: 0;
+  justify-self: end;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 26px rgba(15, 47, 69, 0.1);
+}
+
+.research-signature img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -960,6 +983,16 @@ a:hover {
 
   .section-header {
     display: block;
+  }
+
+  .research-signature {
+    width: min(100%, 310px);
+    margin-top: 1.25rem;
+    justify-self: start;
+  }
+
+  .research-layout {
+    grid-template-columns: 1fr;
   }
 
   .section-header .text-link {
