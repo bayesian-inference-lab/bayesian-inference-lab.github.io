@@ -164,7 +164,7 @@ a:hover {
 
 .hero {
   position: relative;
-  min-height: clamp(520px, 72vh, 760px);
+  min-height: clamp(360px, 52vh, 560px);
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -1027,7 +1027,7 @@ a:hover {
   }
 
   .hero {
-    min-height: 540px;
+    min-height: 420px;
     align-items: start;
   }
 
