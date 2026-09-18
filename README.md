@@ -1,5 +1,23 @@
 # Bayesian Inference LAB Website
 
+## People Photo Optimization
+
+Add People profile photos as JPG/JPEG files in `assets/img/people/`. Before committing, run:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\optimize-people-images.ps1
+```
+
+The script resizes only images whose longest side exceeds 400px, then saves them as JPEGs at quality 82. Existing optimized images are skipped. To recompress every People JPEG, run:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\optimize-people-images.ps1 -Force
+```
+
+Keep the original high-resolution photo outside this repository: the script replaces the web copy in place.
+
 This repository contains the source code for the Bayesian Inference LAB website.
 
 - Website: <https://bayesian-inference-lab.github.io>
